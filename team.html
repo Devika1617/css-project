@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        *{
+            box-sizing: border-box;
+        }
+
+        .main4{
+         
+            background-image:url(bg\ img\ 4.jpeg);
+            display: flex;
+            background-repeat: no-repeat;
+            background-size: cover;
+            justify-content: space-evenly;
+        }
+        .itemm>img{
+            width: 70%;
+            margin: 20px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 5px rgb(78, 76, 76);
+            animation: imageAnimation 5s reverse infinite;
+           transition: ease 5s;
+        }
+        @keyframes imageAnimation{
+            from{
+                transform: translateY(5vw,5vw);
+            }
+            to{
+                transform: scale(0.5);
+            }
+        }
+        
+        main{
+            width: 100%;
+            text-align: center;
+            background-color: grey;
+            border-radius: 10px;
+            padding: 10px;
+            border-radius: 2px solid black;
+            font-family: cursive;
+            font-size: 2rem;
+          
+        }
+        h5{
+            font-size: 30px;
+            text-align: center;
+            border-radius: 10px;
+            background-image: linear-gradient(to right, rgb(255, 255, 136), rgb(254, 220, 158), rgb(255, 134, 134));
+         }
+        
+    </style>
+</head>
+<body>
+   
+    <main>Meet The Team</main>
+    <div class="main4">
+        <div class="itemm i-10">
+        <img src="team img1.webp">
+        <h5>Leon Ardho</h5>
+    </div>
+    <div class="itemm i-11">
+        <img src="team img-2.jpeg">
+        <h5>Andria</h5>
+    </div>
+    </div>
+</body>
+</html>

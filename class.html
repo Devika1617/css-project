@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        *{
+            box-sizing: border-box;
+        }
+ 
+
+        .main3{
+            background-image: url(bg\ img\ 3.jpeg);
+            background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+  grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    z-index: 1;
+    column-gap: 10%;
+        }
+            h2{
+            width: 100%;
+            text-align: center;
+            background-color: rgb(249, 158, 213);
+            padding: 10px;
+            border-radius: 2px solid black;
+            font-family: cursive;
+            font-size: 2rem;
+        }
+        .itm>img{
+            margin: 10px;
+            width: 95%;
+            height: 60%;
+            gap: 2px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px 5px goldenrod;
+            filter: drop-shadow(100);
+
+        }
+        h3{
+            padding: 12px;
+        border-radius: 2px solid;
+        background-image: linear-gradient(to right, rgb(84, 83, 83), rgb(245, 190, 190) ,rgb(197, 180, 29) ,lightpink);
+        text-align: center;
+        font-family: cursive;
+        color: lightcyan;
+        border: 2px solid black;
+    border-radius: 10px;
+    animation: imageAnimation 5s alternate infinite;
+           transition: all 5s;
+        }
+        @keyframes imageAnimation{
+            from{
+                transform: translate(1vw,0vw);
+            }
+            to{
+                transform: scale(1.1);
+            }
+    }
+  
+    </style>
+</head>
+<body>
+    
+    <h2>Classes</h2>
+    <div class="main3">
+
+        <div class="itm i-4">
+            <img src="class i-1.jpg">
+            <h3>Bodybuilding</h3>
+        </div>
+        <div class="itm i-5">
+            <img src="class i-2.jpg">
+            <h3>Gym</h3>
+        </div>
+        <div class="itm i-6">
+            <img src="class i-3.jpg">
+            <h3>Yoga</h3>
+        </div>
+        <div class="itm i-7">
+            <img src="class i-4.jpg">
+            <h3>Aerobics</h3>
+        </div>
+        <div class="itm i-8">
+            <img src="class i-5.jpg">
+            <h3>Weight lifting</h3>
+        </div>
+        <div class="itm i-9">
+            <img src="class i-6.jpg">
+            <h3>Boxing</h3>
+        </div>
+      
+    </div>
+</body>
+</html>

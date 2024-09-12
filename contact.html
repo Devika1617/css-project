@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    body{
+        width: 100%;
+        height: 100vh;
+        background-image: url(bg\ img\ 6.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* position: absolute; */
+        /* top: 20%; */
+        overflow: hidden;
+    }
+    #container{
+        width: 300vw;
+        height: 20vw;
+        display: flex;
+       gap: 40px;
+        animation: scrollcontainer 15s linear alternate infinite;
+    }
+    
+    .containerblock{
+        width: 20vw;
+        height: 15vw;
+        transition: all 0.5s;
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+      }
+      #viewportfixed{
+        width: 100%;
+        height: 20vw;
+        overflow-x: scroll;
+        overflow-y: hidden;
+      }
+      #viewportfixed::-webkit-scrollbar{
+        display: none;
+      }
+      @keyframes scrollcontainer{
+        from{
+            transform: translate(0px,0vw);
+        }
+        to{
+            transform: translate(-100vw,0vw);
+        }
+      }
+   #heading{
+    /* position: relative; */
+    /* bottom: 10%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vw;
+    text-align: center;
+    color: transparent;
+    background-image: linear-gradient(45deg,yellow,green,orange,red,white);
+    -webkit-background-clip: text;
+    font-family: cursive;
+   }
+   .containerblock:hover{
+     transform: scale(1.2);
+   }
+   .slidingimage{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+   }
+   .containerblock:hover .slidingimage{
+    filter: blur(5px) brightness(50%) grayscale(90%);
+   }
+   .gym{
+    position: absolute;
+    z-index: 2;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    font-family: cursive;
+    display: none;
+   }
+   .containerblock:hover .gym{
+    display: block;
+    animation: textanimation 1s;
+   }
+   @keyframes textanimation{
+    from{
+        transform: translate(0px,10vw) rotateX(-180deg) scale(1.8);
+    }
+    to{
+        transform: translate(0px,0vw) rotateY(0deg) scale(1.8);
+    }
+   }
+ 
+ 
+input{
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    padding: 8px;
+    border-radius: 20px;
+        
+}
+button{
+        background-color: palevioletred;
+       padding: 10px;
+       margin: 5px;
+       margin-left: 50%;
+       border-radius: 10px;
+        
+    }
+    button:hover{
+        background-color: lightblue;
+    }
+
+   
+</style>
+<body>
+    
+
+    <h1 id="heading">Brand</h1>
+    <div id="viewportfixed">
+        <div id="container">
+         
+                <a href="#">
+                    <div class="containerblock">
+
+                        <img class="slidingimage" src="./ptr img1.jpg">
+                        <h1 class="gym">cult.fit
+
+                        </h1>
+
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="containerblock">
+                        <img class="slidingimage" src="./ptr img2.png">
+                        <h1 class="gym">Adidas</h1>
+
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="containerblock">
+                        <img class="slidingimage" src="ptr img3.jpg">
+                        <h1 class="gym">Puma</h1>
+
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="containerblock">
+                        <img class="slidingimage" src="ptr img4.png">
+                        <h1 class="gym">Redtape</h1>
+
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="containerblock">
+                        <img class=slidingimage src="ptr img5.png">
+                        <h1 class="gym">Fila</h1>
+
+                    </div>
+                </a>
+            </div>
+        </div>
+    
+ 
+        <form action="./response.html" method="post" >
+            <input type="text" name="number"
+             required 
+            placeholder="phone number"
+            id="number"
+             pattern="\+91[6-9]\d{9}"
+            title=" should follow indian format(+91) the length should be 9">
+          
+            
+        
+        </form>
+        <form action="./response.html" method="post" >
+            <input type="text" name="email "
+             required 
+            placeholder="email"
+            id="email"
+             pattern="[a-z._\d]+@[a-z]+\.[a-z]{2,}"
+            title=" folow format use@ and . compulsory">
+           
+           
+            </form>
+            <form action="./response.html" method="post" >
+                <input type="text" name="password "
+                 required 
+                placeholder="password"
+                id="password"
+                 pattern="(?=.[a-z])(?=.[A-Z])(?=.[\d])(?=.[@#!*]).{8,16}"
+                title=" the length of password should be 8,16 and it should contain 1 small,1 capital,1 digit, 1 special character">
+                
+            </form>
+
+           
+                    <form action="./response.html" method="post" >
+                        
+                        <input type="text" name="username" id="username required"
+                        placeholder="username">
+                         
+                         <br>
+                      <button>submit</button>
+                        </form>
+  
+                  
+</body>
+</html>

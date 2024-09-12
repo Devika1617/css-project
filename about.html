@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        *{
+            box-sizing: border-box;
+        }
+       
+        .main2{
+    background-image: url(bg\ img\ 1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    column-gap: 10%;
+}
+  
+    .item2{
+        margin-top: 10%;
+    text-align: center;
+    height: 70vh;
+    width: 20%;
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    filter: drop-shadow(1px 1px 20px gold);
+    font-family: cursive;
+    font-size: 3vh;
+
+    }
+    h1{
+        border-radius: 2px solid;
+        background-image: linear-gradient(to right, rgb(51, 41, 48),rgb(97, 84, 141), lightgreen);
+    }
+    p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    }
+    .item3>img {
+    height: 80vh;
+    width: 35vw;
+    margin: 100px;
+   align-items: center;
+   justify-content: center;
+   box-shadow: 5px 5px 5px 5px rgb(255, 191, 0);
+   filter: drop-shadow(1px 1px 20px gold);
+   animation: imageAnimation 5s alternate infinite;
+           transition: all 5s;
+        }
+        @keyframes imageAnimation{
+            from{top: 10%;
+                transform: translate(1.5vw,1.5vw);
+            }
+            to{bottom: 20%;
+                transform: scale(1.1);
+            }
+}
+  .item2:hover{
+    height: 70vh;
+    width: 20%;
+    margin: 100px;
+    animation: imageAnimation 5s alternate infinite;
+           transition: all 5s;
+       
+        }
+     
+        @keyframes imageAnimation{
+            from{top: 10%;
+                transform: translate(1.5vw,1.5vw);
+            }
+            to{bottom: 20%;
+                transform: scale(1.1);
+            }
+  }
+      
+        
+    </style>
+</head>
+<body>
+    
+    <div class="main2">
+        <div class="item2">
+            <h1>About</h1>
+            <p>At fitclub, we make group workouts fun, daily food healthy & tasty, mental fitness easy with yoga & meditation</p>
+        </div>
+        <div class="item3">
+            <img src="zumbo.webp">
+        </div>
+    </div>
+</body>
+</html>
